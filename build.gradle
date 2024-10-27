@@ -1,0 +1,37 @@
+plugins {
+    id 'groovy'
+    id 'application'
+}
+
+group = 'com.mentalresonance'
+version = '1.0.0'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.apache.groovy:groovy:4.0.14'
+    implementation 'org.apache.groovy:groovy-json:4.0.14'
+    implementation "com.mentalresonance:dust-core:1.0.3"
+    implementation "com.mentalresonance:dust-http:1.0.3"
+    implementation "com.mentalresonance:dust-html:1.0.3"
+    implementation "com.mentalresonance:dust-feeds:1.1.0"
+    implementation "com.mentalresonance:dust-nlp:1.1.0"
+}
+
+application {
+    mainClass.set("com.mentalresonance.dust.demos.topics.Main")
+    applicationDefaultJvmArgs = [
+        '-Xmx16g',
+        '--add-opens=java.base/java.lang=ALL-UNNAMED',
+        '--add-opens=java.base/java.math=ALL-UNNAMED',
+        '--add-opens=java.base/java.util=ALL-UNNAMED',
+        '--add-opens=java.base/java.util.concurrent=ALL-UNNAMED',
+        '--add-opens=java.base/java.net=ALL-UNNAMED',
+        '--add-opens=java.base/java.text=ALL-UNNAMED',
+        '--add-opens=java.sql/java.sql=ALL-UNNAMED',
+        '--add-opens=java.base/java.nio=ALL-UNNAMED'
+    ]
+}

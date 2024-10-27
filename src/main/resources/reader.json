@@ -1,0 +1,4 @@
+{
+  "topic" :  "Electric Vehicle Charging",
+  "entities":  ["Company", "Technology", "Product", "Location"]
+}
