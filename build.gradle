@@ -35,3 +35,11 @@ application {
         '--add-opens=java.base/java.nio=ALL-UNNAMED'
     ]
 }
+
+java {
+    sourceCompatibility = JavaVersion.toVersion("21")
+    targetCompatibility = JavaVersion.toVersion("21")
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
