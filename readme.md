@@ -10,7 +10,7 @@ The aim here is not so much to develop a fully-usable application (although sure
 be built on this foundation), but rather to show how easy it is to set up NLP pipelines in Dust where 
 various stages of the pipeline have dialogs with ChatGPT. 
 
-A more detailed description can be found <a href="https://github.com/dust-ai-mr/dust-demos-topics/main/docs/topics.pdf">here</a>.
+A more detailed description can be found <a href="https://github.com/dust-ai-mr/dust-demos-topics/blob/main/docs/topics.pdf">here</a>.
 
 # Building and running
 First be sure to have built and locally published the Dust repos this application needs:
